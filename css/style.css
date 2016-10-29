@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+html {
+  font-size: 1rem; }
+
+body {
+  font: 300 13px/1.6 'Century Gothic';
+  color: #ffffff;
+  transition: all .4s .3s ease-in; }
+
+body {
+  background: #0d0d0d; }
+
+.container {
+  background: #262626;
+  width: 960px;
+  height: 1020px;
+  margin: 0 auto;
+  padding: 0; }
+
+header .btn-primary {
+  background: #262626;
+  background: linear-gradient(to bottom, #262626, #999999, #262626);
+  border-style: none; }
+header .btn-headline {
+  width: 320px;
+  height: 50px; }
+
+.btn-panel {
+  width: 240 px;
+  height: 125px;
+  font-size: 1.5rem;
+  line-height: normal;
+  border-radius: 8px;
+  background: #4A1448; }
+
+/*# sourceMappingURL=style.css.map */

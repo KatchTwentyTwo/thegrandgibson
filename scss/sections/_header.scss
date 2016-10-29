@@ -1,0 +1,11 @@
+header {
+    .btn-primary {
+        background: $cyber-iron;
+        background: linear-gradient(to bottom, $cyber-iron, $cyber-foil, $cyber-iron);
+        border-style: none;
+    }
+    .btn-headline {
+        width: 320px;
+        height: 50px;
+    }
+}

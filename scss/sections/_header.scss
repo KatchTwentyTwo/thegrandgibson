@@ -1,11 +1,28 @@
-header {
-    .btn-primary {
+.header {
+    width: 960px;
+    height: 50px;
+    // Header
+    .gibson-headliner {}
+    .tagline-bar {
+        text-align: center;
+        text-decoration: none;
+        margin-left: 15px;
+        padding-top: 1rem;
+        width: 640px;
+        height: 50px;
         background: $cyber-iron;
         background: linear-gradient(to bottom, $cyber-iron, $cyber-foil, $cyber-iron);
-        border-style: none;
+        border-style-left: 1px;
+        border-color: $cyber-steel;
     }
-    .btn-headline {
-        width: 320px;
-        height: 50px;
+    .gg-headliner {
+        padding: 0px;
+        .btn-primary {
+            width: 320px;
+            height: 50px;
+            background: $cyber-iron;
+            background: linear-gradient(to bottom, $cyber-iron, $cyber-foil, $cyber-iron);
+            border-style: none;
+        }
     }
 }

@@ -13,28 +13,73 @@ body {
 
 body {
   background: #0d0d0d; }
+  body .container {
+    background: #262626;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0px; }
+    body .container header {
+      position: fixed;
+      z-index: 2; }
+    body .container .scrollbox {
+      margin-top: 50px; }
 
-.container {
-  background: #262626;
+.header {
   width: 960px;
-  height: 1020px;
-  margin: 0 auto;
-  padding: 0; }
-
-header .btn-primary {
-  background: #262626;
-  background: linear-gradient(to bottom, #262626, #999999, #262626);
-  border-style: none; }
-header .btn-headline {
-  width: 320px;
   height: 50px; }
+  .header .tagline-bar {
+    text-align: center;
+    text-decoration: none;
+    margin-left: 15px;
+    padding-top: 1rem;
+    width: 640px;
+    height: 50px;
+    background: #262626;
+    background: linear-gradient(to bottom, #262626, #999999, #262626);
+    border-style-left: 1px;
+    border-color: #0d0d0d; }
+  .header .gg-headliner {
+    padding: 0px; }
+    .header .gg-headliner .btn-primary {
+      width: 320px;
+      height: 50px;
+      background: #262626;
+      background: linear-gradient(to bottom, #262626, #999999, #262626);
+      border-style: none; }
+
+.footer {
+  background: #250A24;
+  margin-left: 15px;
+  z-index: 2px;
+  width: 960px;
+  height: 80px;
+  padding: 10px;
+  position: fixed; }
+
+.copyright-bar {
+  text-align: center;
+  height: 15px;
+  position: fixed;
+  width: 960px;
+  margin: 0 auto; }
+
+.sidenav-menu {
+  margin-top: 52px;
+  background: #4A1448; }
 
 .btn-panel {
-  width: 240 px;
   height: 125px;
   font-size: 1.5rem;
   line-height: normal;
-  border-radius: 8px;
+  border-radius: 0px;
+  background: #4A1448; }
+
+aside .sidebar {
+  position: fixed;
+  margin-top: 50px;
+  margin-left: 15px;
+  width: 240px;
+  height: 1020px;
   background: #4A1448; }
 
 /*# sourceMappingURL=style.css.map */

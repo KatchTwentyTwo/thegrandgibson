@@ -1,11 +1,16 @@
 body {
     background: $cyber-steel;
-}
-
-.container {
-    background: $cyber-iron;
-    width: 960px;
-    height: 1020px;
-    margin: 0 auto;
-    padding: 0;
+    .container {
+        background: $cyber-iron;
+        width: 960px;
+        margin: 0 auto;
+        padding: 0px;
+        header {
+            position: fixed;
+            z-index: 2;
+        }
+        .scrollbox {
+            margin-top: 50px;
+        }
+    }
 }

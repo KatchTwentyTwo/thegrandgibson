@@ -1,8 +1,23 @@
+.sidenav-menu {
+    margin-top: 52px;
+    background: $neon-purple;
+}
+
 .btn-panel {
-    width: 240 px;
     height: 125px;
     font-size: 1.5rem;
     line-height: normal;
-    border-radius: 8px;
+    border-radius: 0px;
     background: $neon-purple;
+}
+
+aside {
+    .sidebar {
+        position: fixed;
+        margin-top: 50px;
+        margin-left: 15px;
+        width: 240px;
+        height: 1020px;
+        background: $neon-purple;
+    }
 }

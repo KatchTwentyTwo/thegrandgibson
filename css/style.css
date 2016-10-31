@@ -13,15 +13,16 @@ body {
 
 body {
   background: #0d0d0d; }
-  body .container {
+  body .container-fluid {
+    z-index: 0;
     background: #262626;
     width: 960px;
     margin: 0 auto;
     padding: 0px; }
-    body .container header {
+    body .container-fluid header {
       position: fixed;
       z-index: 2; }
-    body .container .scrollbox {
+    body .container-fluid .scrollbox {
       margin-top: 50px; }
 
 .header {
@@ -47,19 +48,40 @@ body {
       background: linear-gradient(to bottom, #262626, #999999, #262626);
       border-style: none; }
 
-.footer {
-  background: #250A24;
-  margin-left: 15px;
-  z-index: 2px;
-  width: 960px;
-  height: 80px;
-  padding: 10px;
-  position: fixed; }
+.container {
+  z-index: 2;
+  width: 720;
+  margin-left: 240px;
+  padding: 0px; }
+  .container .footer {
+    z-index: 2;
+    margin-left: 365px;
+    width: 730px;
+    height: 160px;
+    padding: 10px;
+    background: #250A24;
+    top: 810px; }
+    .container .footer .footnotes h4 {
+      background: #4A1448;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: center; }
+    .container .footer .social-media h4 {
+      background: #4A1448;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: center; }
+    .container .footer .social-media ul {
+      margin-top: 20px;
+      margin-left: 20px; }
+      .container .footer .social-media ul li {
+        margin-right: 15px;
+        display: inline;
+        list-style-type: none; }
 
 .copyright-bar {
   text-align: center;
   height: 15px;
-  position: fixed;
   width: 960px;
   margin: 0 auto; }
 
@@ -72,14 +94,24 @@ body {
   font-size: 1.5rem;
   line-height: normal;
   border-radius: 0px;
-  background: #4A1448; }
+  background: #4A1448;
+  background: linear-gradient(to bottom, #662D91, #93278F, #662D91); }
+  .btn-panel:hover {
+    background: linear-gradient(to bottom, #93278F, #662D91, #93278F); }
 
 aside .sidebar {
+  z-index: 1;
   position: fixed;
   margin-top: 50px;
   margin-left: 15px;
   width: 240px;
-  height: 1020px;
+  height: 830px;
   background: #4A1448; }
+  aside .sidebar .btn-group-vertical {
+    width: 240px;
+    margin-left: -15px; }
+    aside .sidebar .btn-group-vertical .btn-primary {
+      border-radius: 0px;
+      border-color: #0d0d0d; }
 
 /*# sourceMappingURL=style.css.map */

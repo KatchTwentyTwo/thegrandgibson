@@ -1,6 +1,7 @@
 body {
     background: $cyber-steel;
-    .container {
+    .container-fluid {
+        z-index: 0;
         background: $cyber-iron;
         width: 960px;
         margin: 0 auto;

@@ -9,15 +9,28 @@
     line-height: normal;
     border-radius: 0px;
     background: $neon-purple;
+    background: linear-gradient(to bottom, $neon-lavender, $neon-magenta-lite, $neon-lavender);
+    &:hover {
+        background: linear-gradient(to bottom, $neon-magenta-lite, $neon-lavender, $neon-magenta-lite);
+    }
 }
 
 aside {
     .sidebar {
+        z-index: 1;
         position: fixed;
         margin-top: 50px;
         margin-left: 15px;
         width: 240px;
-        height: 1020px;
+        height: 830px;
         background: $neon-purple;
+        .btn-group-vertical {
+            width: 240px;
+            margin-left: -15px;
+            .btn-primary {
+                border-radius: 0px;
+                border-color: $cyber-steel;
+            }
+        }
     }
 }

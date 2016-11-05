@@ -1,15 +1,16 @@
 .header {
     width: 960px;
-    height: 50px;
+    height: 60px;
     // Header
     .gibson-headliner {}
     .tagline-bar {
+        font-size: 1.3rem;
         text-align: center;
         text-decoration: none;
         margin-left: 15px;
-        padding-top: 1rem;
+        padding-top: 6px;
         width: 640px;
-        height: 50px;
+        height: 60px;
         background: $cyber-iron;
         background: linear-gradient(to bottom, $cyber-iron, $cyber-foil, $cyber-iron);
         border-style-left: 1px;
@@ -18,11 +19,31 @@
     .gg-headliner {
         padding: 0px;
         .btn-primary {
+            font-size: 1.3rem;
             width: 320px;
-            height: 50px;
+            height: 60px;
             background: $cyber-iron;
             background: linear-gradient(to bottom, $cyber-iron, $cyber-foil, $cyber-iron);
             border-style: none;
+        }
+    }
+    .dropdown-menu {
+        padding: 0px;
+        li {
+            a {
+                text-align: center;
+                color: $cyber-glass;
+                font-size: 1.3rem;
+                width: 320px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                background: $cyber-iron;
+                background: linear-gradient(to bottom, $cyber-iron, $cyber-foil, $cyber-iron);
+                border-style: none;
+                &:hover {
+                    background: linear-gradient(to bottom, $cyber-foil, $cyber-iron, $cyber-foil);
+                }
+            }
         }
     }
 }

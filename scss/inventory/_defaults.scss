@@ -14,3 +14,22 @@ body {
     color: $cyber-glass;
     transition: all .4s .3s ease-in;
 }
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin margin($margin) {
+    margin-left: $margin;
+    width: 720px;
+}
+
+@mixin font-size($font-size) {
+    text-align: center;
+    font-size: $font-size;
+    color: $cyber-glass;
+    line-height: 3.05rem;
+    text-decoration: none;
+}

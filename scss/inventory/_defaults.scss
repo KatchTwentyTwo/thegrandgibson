@@ -33,3 +33,35 @@ body {
     line-height: 3.05rem;
     text-decoration: none;
 }
+
+@mixin background($background) {
+    z-index: 1;
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 15px;
+    width: 240px;
+    height: 100%;
+    background: $background;
+}
+
+// Footer Mixins
+@mixin foot-box($color) {
+    z-index: 2;
+    width: 960px;
+    background: $color;
+    padding: 0px;
+}
+
+@mixin listname($backdrop) {
+    background: $backdrop;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+@mixin modsbackdrop($imagery) {
+    margin: 2%;
+    border: solid 2px;
+    border-color: $cyber-tin;
+    background-image: url($imagery);
+}

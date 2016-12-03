@@ -1,42 +1,44 @@
 .header {
-    width: 960px;
-    height: 60px;
+    width: 50%;
+    // height: 15%;
     // Header
-    .gibson-headliner {}
-    .tagline-bar {
-        font-size: 1.3rem;
-        text-align: center;
-        text-decoration: none;
-        margin-left: 15px;
-        padding-top: 6px;
-        width: 640px;
-        height: 60px;
-        background: $cyber-iron;
-        background: linear-gradient(to bottom, $cyber-iron, $cyber-foil, $cyber-iron);
-        border-style-left: 1px;
-        border-color: $cyber-steel;
-    }
-    .gg-headliner {
-        padding: 0px;
-        .btn-primary {
+    .gibson-headliner {
+        .tagline-bar {
             font-size: 1.3rem;
-            width: 320px;
-            height: 60px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 1.9%;
+            padding-top: 1.1%;
+            padding-bottom: 1%;
+            width: 70%;
+            height: 5%;
             background: $cyber-iron;
             background: linear-gradient(to bottom, $cyber-iron, $cyber-foil, $cyber-iron);
-            border-style: none;
+        }
+        .gg-headliner {
+            padding: 0%;
+            .btn-primary {
+                font-size: 1.3rem;
+                width: 182%;
+                padding-top: 9%;
+                padding-bottom: 9%;
+                background: $cyber-iron;
+                background: linear-gradient(to bottom, $cyber-iron, $cyber-foil, $cyber-iron);
+                border-style: none;
+                border-radius: 0%;
+            }
         }
     }
     .dropdown-menu {
-        padding: 0px;
+        padding: 0%;
         li {
             a {
                 text-align: center;
                 color: $cyber-glass;
                 font-size: 1.3rem;
-                width: 320px;
-                padding-top: 5px;
-                padding-bottom: 5px;
+                width: 139%;
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
                 background: $cyber-iron;
                 background: linear-gradient(to bottom, $cyber-iron, $cyber-foil, $cyber-iron);
                 border-style: none;

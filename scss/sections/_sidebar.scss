@@ -1,36 +1,122 @@
-.sidenav-menu {
-    margin-top: 52px;
-    background: $neon-purple;
-}
-
-.btn-panel {
-    height: 125px;
-    font-size: 1.5rem;
-    line-height: normal;
-    border-radius: 0px;
-    background: $neon-purple;
-    background: linear-gradient(to bottom, $neon-lavender, $neon-magenta-lite, $neon-lavender);
-    &:hover {
-        background: linear-gradient(to bottom, $neon-magenta-lite, $neon-lavender, $neon-magenta-lite);
-    }
-}
-
-aside {
-    .sidebar {
-        z-index: 1;
-        position: fixed;
-        margin-top: 50px;
-        margin-left: 15px;
-        width: 240px;
-        height: 100%;
+    .sidenav-menu {
+        margin-top: 52px;
         background: $neon-purple;
-        .btn-group-vertical {
-            width: 240px;
-            margin-left: -15px;
-            .btn-primary {
-                border-radius: 0px;
-                border-color: $cyber-steel;
+    }
+    
+    aside {
+        .sidebar {
+            @include background($neon-purple);
+            .btn-group-vertical {
+                width: 115%;
+                margin-left: -7%;
+                .btn-block {
+                    width: 115%;
+                }
+                .btn-primary {
+                    border-radius: 0%;
+                    border-color: $cyber-steel;
+                }
+                .btn-panel {
+                    padding: 20% 0 20% 0;
+                    font-size: 1.5rem;
+                    a {
+                        color: $cyber-glass;
+                    }
+                    line-height: normal;
+                    border-radius: 0%;
+                    background: $neon-purple;
+                    background: linear-gradient(to bottom, $neon-lavender, $neon-magenta-lite, $neon-lavender);
+                    &:hover {
+                        background: linear-gradient(to bottom, $neon-magenta-lite, $neon-lavender, $neon-magenta-lite);
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar-g {
+            @include background($neon-green-deep);
+            .btn-group-vertical {
+                width: 240px;
+                margin-left: -15px;
+                .btn-primary {
+                    border-radius: 0px;
+                    border-color: $cyber-steel;
+                }
+                .btn-panel-g {
+                    padding: 20% 0 20% 0;
+                    font-size: 1.5rem;
+                    a {
+                        color: $cyber-glass;
+                    }
+                    line-height: normal;
+                    border-radius: 0%;
+                    background: $neon-purple;
+                    background: linear-gradient(to bottom, $neon-green-deep, $neon-green, $neon-green-deep);
+                    &:hover {
+                        background: linear-gradient(to bottom, $neon-green, $neon-green-deep, $neon-green);
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar-b {
+            @include background($neon-aqua-deep);
+            .btn-group-vertical {
+                width: 240px;
+                margin-left: -15px;
+                .btn-primary {
+                    border-radius: 0px;
+                    border-color: $cyber-steel;
+                }
+                .btn-panel-b {
+                    padding: 20% 0 20% 0;
+                    font-size: 1.5rem;
+                    a {
+                        color: $cyber-glass;
+                    }
+                    line-height: normal;
+                    border-radius: 0%;
+                    background: $neon-aqua;
+                    background: linear-gradient(to bottom, $neon-aqua-deep, $neon-aqua, $neon-aqua-deep);
+                    &:hover {
+                        background: linear-gradient(to bottom, $neon-aqua, $neon-aqua-deep, $neon-aqua);
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar-s {
+            @include background($cyber-foil);
+            .btn-group-vertical {
+                width: 240px;
+                margin-left: -15px;
+                .btn-primary {
+                    border-radius: 0px;
+                    border-color: $cyber-steel;
+                }
+                .btn-panel-s {
+                    padding: 20% 0 20% 0;
+                    font-size: 1.5rem;
+                    a {
+                        color: $cyber-glass;
+                    }
+                    line-height: normal;
+                    border-radius: 0%;
+                    background: $cyber-foil;
+                    background: linear-gradient(to bottom, $cyber-steel, $cyber-foil, $cyber-steel);
+                    &:hover {
+                        background: linear-gradient(to bottom, $cyber-foil, $cyber-steel, $cyber-foil);
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
             }
         }
     }
-}

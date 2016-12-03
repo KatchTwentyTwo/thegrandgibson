@@ -1,39 +1,294 @@
-body {
-    background: $cyber-steel;
-    .container-fluid {
-        z-index: 0;
-        background: $cyber-iron;
-        width: 960px;
-        margin: 0 auto;
-        padding: 0px;
-        height: auto;
-        header {
-            position: fixed;
-            z-index: 2;
-        }
-        .scrollbox {
-            margin-top: 60px;
-            .headline-info {
-                background: $neon-deep-purple;
-                margin-left: -7px;
-                width: 720px;
-                p {
-                    @include font-size(2.5rem);
+        body {
+            background: $cyber-steel;
+            .container-fluid {
+                z-index: 0;
+                background: $cyber-iron;
+                width: 60%;
+                margin: 0 auto;
+                height: auto;
+                padding: 0%;
+                header {
+                    position: fixed;
+                    z-index: 2;
                 }
-            }
-            .upcoming {
-                @include margin(-7px);
-                background: $neon-magenta-lite;
-                p {
-                    @include font-size(2.5rem);
-                    &:hover {
-                        @include font-size(2rem);
+                .scrollbox {
+                    margin-top: 7%;
+                    .headline-info {
+                        background: $neon-deep-purple;
+                        margin-top: -0.5%;
+                        margin-left: -2.5%;
+                        width: 102.5%;
+                        p {
+                            padding-top: 0.5%;
+                            @include font-size(2.5rem);
+                        }
+                    }
+                    .headline-info-g {
+                        background: $neon-green-steel;
+                        margin-left: -7px;
+                        width: 720px;
+                        p {
+                            @include font-size(2.5rem);
+                            a {
+                                font-size: 1.5rem;
+                                color: $neon-green-lite;
+                            }
+                        }
+                    }
+                    .headline-info-b {
+                        background: $neon-aqua-lead;
+                        margin-left: -7.1px;
+                        width: 720px;
+                        p {
+                            @include font-size(2.5rem);
+                        }
+                    }
+                    .headline-info-s {
+                        background: $cyber-tin;
+                        margin-left: -7.1px;
+                        width: 720px;
+                        p {
+                            @include font-size(2.5rem);
+                        }
+                    }
+                    .projects-container {
+                        margin-left: 10%;
+                        .projects-box {
+                            width: 256px;
+                            height: 256px;
+                            margin: 2%;
+                            padding-right: 25px;
+                            a {
+                                img {
+                                    margin-left: -8.3%;
+                                    margin-top: -0.6%;
+                                    // border: solid 3px;
+                                    // border-color: $neon-green;
+                                }
+                                &:hover {}
+                            }
+                        }
+                        .fnvmods {
+                            @include modsbackdrop('../img/p_/fn_modsbox.png');
+                            .dropdown {
+                                .btn-warning {
+                                    background: $cyber-sunset;
+                                    border-style: none;
+                                }
+                                margin-top: 1%;
+                                .dropdown-menu {
+                                    padding: 0;
+                                    li {
+                                        text-align: center;
+                                        color: $cyber-glass;
+                                        font-size: 0.87rem;
+                                        width: 320px;
+                                        padding: 0.75%;
+                                        background: $cyber-sunset;
+                                        border-style: none;
+                                    }
+                                }
+                            }
+                            p {
+                                a {
+                                    font-weight: bold;
+                                    font-size: 1.2rem;
+                                    color: $neon-green-lite;
+                                }
+                            }
+                        }
+                        .f4mods {
+                            @include modsbackdrop('../img/p_/f4_modsbox.png');
+                            .dropdown {
+                                .btn-warning {
+                                    background: $cyber-sunset;
+                                    border-style: none;
+                                }
+                                margin-top: 1%;
+                                .dropdown-menu {
+                                    padding: 0;
+                                    li {
+                                        text-align: center;
+                                        color: $cyber-glass;
+                                        font-size: 0.87rem;
+                                        width: 320px;
+                                        padding: 0.75%;
+                                        background: $cyber-sunset;
+                                        border-style: none;
+                                    }
+                                }
+                            }
+                            p {
+                                a {
+                                    font-weight: bold;
+                                    font-size: 1.2rem;
+                                    color: $neon-green-lite;
+                                }
+                            }
+                        }
+                        .tes5mods {
+                            @include modsbackdrop('../img/p_/tes5_modsbox.png');
+                            p {
+                                a {
+                                    font-weight: bold;
+                                    font-size: 1.2rem;
+                                    color: $cyber-steel;
+                                }
+                            }
+                        }
+                        .egmods {
+                            @include modsbackdrop('../img/p_/eg_modsbox.png');
+                            width: 700px;
+                            margin-left: -10.5%;
+                            p {
+                                a {
+                                    font-weight: bold;
+                                    font-size: 1.2rem;
+                                    color: $neon-green-lite;
+                                }
+                            }
+                        }
+                        .wommods {
+                            @include modsbackdrop('../img/p_/wom_modsbox.png');
+                            // height: 960px;
+                            width: 700px;
+                            margin-left: -10.5%;
+                            a {
+                                font-weight: bold;
+                                font-size: 1.2rem;
+                                color: $cyber-steel;
+                            }
+                            .refs {
+                                margin: 2%;
+                                border: solid 2px;
+                                border-color: $cyber-tin;
+                            }
+                            .large {
+                                margin: 2%;
+                                border: solid 2px;
+                                border-color: $cyber-tin;
+                                margin-left: -2%;
+                            }
+                        }
+                        .mwmods {
+                            @include modsbackdrop('../img/p_/mw_modsbox.png');
+                            margin-left: -4.75%;
+                            p {
+                                a {
+                                    font-weight: bold;
+                                    font-size: 1.2rem;
+                                    color: $cyber-glass;
+                                }
+                            }
+                        }
+                        .sourcefiles {
+                            margin: 2%;
+                            margin-left: -5%;
+                        }
+                        .sourcefiles2 {
+                            margin: 2%;
+                            margin-left: -6.5%;
+                        }
+                    }
+                    .articles-box {
+                        background: $neon-aqua-lead;
+                        margin: 1%;
+                        width: 700px;
+                        border: solid 2px;
+                        border-color: $cyber-steel;
+                        p {
+                            font-size: 0.85rem;
+                            color: $cyber-glass;
+                            text-decoration: none;
+                            a {
+                                color: $neon-aqua-lite;
+                            }
+                        }
+                    }
+                    .wsamples-box {
+                        background: $cyber-foil;
+                        margin: 1%;
+                        width: 700px;
+                        border: solid 2px;
+                        border-color: $cyber-steel;
+                        p {
+                            font-size: 0.85rem;
+                            color: $cyber-glass;
+                            text-decoration: none;
+                            a {
+                                color: $cyber-iron;
+                            }
+                        }
+                    }
+                    .contacts-box {
+                        width: 720px;
+                        padding: 2%;
+                        .business-tag {
+                            font-size: 1rem;
+                        }
+                        .forum-tag {
+                            margin-right: 2%;
+                        }
+                        .ad-box {
+                            width: 50%;
+                            padding: 2%;
+                            background: $cyber-tin;
+                            border: solid 1px;
+                            border-color: $cyber-steel;
+                        }
+                    }
+                    .upcoming {
+                        @include margin(-7px);
+                        background: $neon-magenta-lite;
+                        p {
+                            @include font-size(2.5rem);
+                            &:hover {
+                                @include font-size(2rem);
+                            }
+                        }
+                    }
+                    .message-box {
+                        margin: 0.75%;
+                        background: $neon-purple;
+                        border: solid 1px;
+                        border-color: $neon-magenta-lite;
+                        margin-left: 11%;
+                        img {
+                            margin: 5%;
+                        }
+                        p {
+                            font-size: 1.2rem;
+                            line-height: 1.5rem;
+                            a.unique {
+                                color: $neon-green-lite;
+                                &:hover {
+                                    color: $neon-aqua-lead;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                    .img-thumb {
+                        margin-top: 5%;
+                    }
+                    .img-thumb2 {
+                        margin-left: 25px;
+                        margin-top: 5%;
+                    }
+                    .thumb-gallery {
+                        @include margin(-7px);
+                        background: $neon-green-lite;
+                        .gallery-list {
+                            list-style-type: none;
+                            margin-left: -3%;
+                            li {
+                                margin: 3%
+                            }
+                        }
                     }
                 }
+                video {
+                    margin-top: 2.5%;
+                }
             }
         }
-        video {
-            margin-top: 15px;
-        }
-    }
-}
